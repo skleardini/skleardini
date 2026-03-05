@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0F2E4E" />
+  <title>SKL Leardini — Serviços</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a2d;
+      --card2:#12213a;
+      --text:#eef2ff;
+      --muted:#a9b4cc;
+      --accent:#b0151a;
+      --ok:#22c55e;
+      --line:rgba(255,255,255,.08);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      color:var(--text);
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(176,21,26,.25), transparent 55%),
+                  radial-gradient(900px 600px at 100% 0%, rgba(79,70,229,.18), transparent 45%),
+                  linear-gradient(180deg, #070b13 0%, #0b1220 100%);
+      min-height:100vh;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:760px; margin:0 auto; padding:22px 16px 36px}
+    .top{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding:14px 14px; border:1px solid var(--line); border-radius:var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      backdrop-filter: blur(6px);
+    }
+    .brand{display:flex; flex-direction:column; gap:4px}
+    .brand .name{font-weight:800; letter-spacing:.2px}
+    .brand .sub{color:var(--muted); font-size:13px}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px; border-radius:999px;
+      border:1px solid var(--line); background:rgba(255,255,255,.04);
+      font-weight:700; font-size:14px; white-space:nowrap;
+    }
+    .grid{display:grid; gap:12px; margin-top:14px}
+    .hero{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:16px 14px;
+      background:linear-gradient(180deg, rgba(15,46,78,.35), rgba(255,255,255,.03));
+    }
+    .hero h1{margin:0 0 8px; font-size:18px}
+    .hero p{margin:0; color:var(--muted); line-height:1.45; font-size:14px}
+    .ctaRow{display:grid; grid-template-columns:1fr; gap:10px; margin-top:12px}
+    .btn{
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      padding:14px 14px; border-radius:14px; font-weight:800;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+    }
+    .btn.primary{background:linear-gradient(180deg, rgba(176,21,26,.95), rgba(176,21,26,.75)); border-color:rgba(255,255,255,.12)}
+    .btn.secondary{background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03))}
+    .btn small{display:block; font-weight:700; opacity:.9}
+    .sectionTitle{
+      margin:6px 2px 0;
+      color:var(--muted);
+      font-size:12px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+    details{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      overflow:hidden;
+    }
+    summary{
+      cursor:pointer;
+      list-style:none;
+      padding:14px 14px;
+      display:flex; align-items:center; justify-content:space-between; gap:10px;
+      font-weight:800;
+    }
+    summary::-webkit-details-marker{display:none}
+    .tag{font-size:12px; color:var(--muted); font-weight:700}
+    .content{
+      padding:0 14px 14px;
+      color:var(--muted);
+      line-height:1.5;
+      font-size:14px;
+      border-top:1px solid var(--line);
+    }
+    ul{margin:10px 0 0 18px; padding:0}
+    li{margin:6px 0}
+    .emg{
+      border-color:rgba(176,21,26,.35);
+      background:linear-gradient(180deg, rgba(176,21,26,.18), rgba(255,255,255,.02));
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+      font-size:12px; font-weight:800;
+    }
+    .footer{
+      margin-top:14px; color:var(--muted); font-size:12px; line-height:1.4;
+      padding:12px 6px 0;
+    }
+    .split{display:grid; gap:10px}
+    @media (min-width:520px){
+      .ctaRow{grid-template-columns:1fr 1fr}
+      .split{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <div class="name">SKL Leardini</div>
+        <div class="sub">Contabilidade e Assessoria • SP</div>
+      </div>
+      <div class="pill">Atendimento via WhatsApp</div>
+    </div>
+
+    <div class="grid">
+      <div class="hero">
+        <h1>Escolha seu perfil e veja os serviços</h1>
+        <p>Objetivo: informar rápido e facilitar seu contato direto. Sem enrolação.</p>
+        <div class="ctaRow">
+          <a class="btn primary" href="https://wa.me/5519983132243?text=Ol%C3%A1%21%20Vim%20pelo%20QR%20Code%20e%20quero%20saber%20sobre%20servi%C3%A7os%20cont%C3%A1beis." target="_blank" rel="noopener">
+            WhatsApp (19) 98313-2243
+          </a>
+          <a class="btn secondary" href="https://wa.me/5519982319053?text=Ol%C3%A1%21%20Vim%20pelo%20QR%20Code%20e%20quero%20saber%20sobre%20servi%C3%A7os%20cont%C3%A1beis." target="_blank" rel="noopener">
+            WhatsApp (19) 98231-9053
+          </a>
+        </div>
+        <div style="margin-top:10px; display:flex; flex-wrap:wrap; gap:8px">
+          <a class="badge" href="./mudanca-tributaria.html">Mudança Tributária 2026</a>
+          <span class="badge">Resposta rápida</span>
+          <span class="badge">Organização fiscal</span>
+        </div>
+      </div>
+
+      <div class="sectionTitle">Perfis</div>
+
+      <div class="split">
+        <details open>
+          <summary>Sou MEI <span class="tag">mais comum</span></summary>
+          <div class="content">
+            <strong>Incluso no honorário (rotina):</strong>
+            <ul>
+              <li>Orientação mensal e conferência básica de faturamento</li>
+              <li>Guia DAS / acompanhamento de prazos</li>
+              <li>Declarações obrigatórias quando aplicável</li>
+            </ul>
+            <div style="height:10px"></div>
+            <strong>Serviços avulsos (cobrados à parte):</strong>
+            <ul>
+              <li class="emg"><strong>Desenquadramento / reenquadramento</strong></li>
+              <li class="emg"><strong>Regularização, bloqueio, inaptidão, pendências</strong></li>
+              <li>Parcelamentos e negociações</li>
+              <li>Retificações e correções</li>
+              <li>Organização PJ x PF (se misturou contas)</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>Sou PF (autônomo / profissional) <span class="tag">recibos e organização</span></summary>
+          <div class="content">
+            <strong>Incluso (rotina):</strong>
+            <ul>
+              <li>Mapeamento de receitas e despesas</li>
+              <li>Orientação de declaração e obrigações do período</li>
+            </ul>
+            <div style="height:10px"></div>
+            <strong>Serviços avulsos:</strong>
+            <ul>
+              <li>Planejamento de formalização (se fizer sentido)</li>
+              <li>Regularização e pendências</li>
+              <li>Parcelamentos e negociações</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>Sou PJ (ME/EPP/LTDA) <span class="tag">rotina fiscal + suporte</span></summary>
+          <div class="content">
+            <strong>Incluso no honorário (rotina):</strong>
+            <ul>
+              <li>Apuração e guias do regime (conforme enquadramento)</li>
+              <li>Obrigações acessórias do período (conforme exigência)</li>
+              <li>Suporte de rotina e orientações operacionais</li>
+            </ul>
+            <div style="height:10px"></div>
+            <strong>Serviços avulsos (cobrados à parte):</strong>
+            <ul>
+              <li class="emg"><strong>Regularização: bloqueios, pendências, inaptidão</strong></li>
+              <li class="emg"><strong>Desenquadramento / reenquadramento</strong></li>
+              <li>Parcelamentos e negociações</li>
+              <li>Retificações e correções</li>
+              <li>Revisão de regime / diagnóstico fiscal</li>
+              <li>Organização PJ x PF e regras de pró-labore/lucros</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="emg">
+          <summary>⚠ Serviços de urgência <span class="tag">prioridade</span></summary>
+          <div class="content">
+            <ul>
+              <li><strong>Desenquadramento / reenquadramento</strong></li>
+              <li><strong>Dívidas, pendências, bloqueios, inaptidão</strong></li>
+              <li><strong>Parcelamentos e negociações</strong></li>
+              <li><strong>Regularização de CPF/CNPJ</strong></li>
+              <li><strong>Retificações emergenciais</strong></li>
+            </ul>
+            <div style="height:10px"></div>
+            <a class="btn primary" href="https://wa.me/5519982319053?text=Ol%C3%A1%21%20Estou%20com%20uma%20urg%C3%AAncia%20fiscal%20e%20preciso%20de%20ajuda." target="_blank" rel="noopener">
+              Falar agora (urgência)
+            </a>
+          </div>
+        </details>
+      </div>
+
+      <div class="footer">
+        <div><strong>SKL Leardini Contabilidade e Assessoria</strong></div>
+        <div>Este link foi pensado para funcionar bem no celular (iOS/Android) via QR Code.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
